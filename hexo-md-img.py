@@ -9,8 +9,7 @@ def markdown_to_html_img(text):
     replacement = r'<img src="\2" alt="\1" referrerpolicy="no-referrer">'
     
     return re.sub(pattern, replacement, text)
-
-markdown_data = input()
-html_result = markdown_to_html_img(markdown_data)
-
-print(html_result)
+while(1):
+    markdown_data = input()
+    html_result = markdown_to_html_img(markdown_data)
+    print(html_result)
